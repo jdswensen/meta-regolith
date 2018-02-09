@@ -29,8 +29,8 @@ do_install() {
     cd ${S}/cmake/iotsdk_linux
     oe_runmake install
 
-    install -d ${D}${libdir}azure-iot-sdk-c
+    install -d ${D}${libdir}/azure-iot-sdk-c
     install -d ${D}${bindir}
     install -m 0777 ${S}/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp_websockets/iothub_client_sample_amqp_websockets ${D}${bindir}
-    install -m 0777 ${S}/iothub_client/tests/global_valgrind_suppression.supp ${D}${libdir}azure-iot-sdk-c/global_valgrind_suppression.supp
+    install -m 0777 ${S}/iothub_client/tests/global_valgrind_suppression.supp ${D}${libdir}/azure-iot-sdk-c/global_valgrind_suppression.supp
 }
