@@ -1,0 +1,26 @@
+From 94eb18769912941cbbf3b09d31b9644948a07b46 Mon Sep 17 00:00:00 2001
+From: Jake Swensen <jake@swensen.io>
+Date: Fri, 9 Feb 2018 16:15:39 -0600
+Subject: [PATCH] iothub_client: sample: amqp_ws: modify default connection
+ string
+
+---
+ .../iothub_client_sample_amqp_websockets.c                              | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/iothub_client/samples/iothub_client_sample_amqp_websockets/iothub_client_sample_amqp_websockets.c b/iothub_client/samples/iothub_client_sample_amqp_websockets/iothub_client_sample_amqp_websockets.c
+index a33f9bf4..1cee1346 100644
+--- a/iothub_client/samples/iothub_client_sample_amqp_websockets/iothub_client_sample_amqp_websockets.c
++++ b/iothub_client/samples/iothub_client_sample_amqp_websockets/iothub_client_sample_amqp_websockets.c
+@@ -13,7 +13,7 @@
+ #include "iothubtransportamqp_websockets.h"
+ #include "../../../certs/certs.h"
+ 
+-static const char* connectionString = "[device connection string]";
++static const char* connectionString = "HostName=[insert_hostname];DeviceId=[insert_id];SharedAccessKey=[insert_key]";
+ static int callbackCounter;
+ 
+ 
+-- 
+2.14.3
+

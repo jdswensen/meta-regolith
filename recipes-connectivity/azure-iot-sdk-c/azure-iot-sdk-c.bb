@@ -5,7 +5,9 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=4283671594edec4c13aeb073c219237a"
 
 SRCREV = "4f5b1f4fcafba68a93f322a2c34bd4d064a93750"
-SRC_URI = "gitsm://github.com/azure/azure-iot-sdk-c.git;protocol=https;branch=master"
+SRC_URI = "gitsm://github.com/azure/azure-iot-sdk-c.git;protocol=https;branch=master \
+    file://0001-iothub_client-sample-amqp_ws-modify-default-connecti.patch \
+"
 
 #PROVIDES += "azure-iot-sdk-c"
 DEPENDS = "curl openssl util-linux"
