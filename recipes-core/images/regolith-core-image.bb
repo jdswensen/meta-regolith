@@ -4,7 +4,7 @@ inherit core-image
 
 IMAGE_INSTALL += "kernel-devicetree kernel"
 IMAGE_INSTALL += "e2fsprogs e2fsprogs-resize2fs"
-IMAGE_INSTALL += "valgrind curl"
+IMAGE_INSTALL += "valgrind curl azure-iot-sdk-c"
 
 IMAGE_FSTYPES = "ext4.gz ext4"
 
