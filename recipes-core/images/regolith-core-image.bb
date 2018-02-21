@@ -8,3 +8,5 @@ IMAGE_INSTALL += "valgrind curl azure-iot-sdk-c"
 IMAGE_FSTYPES = "ext4.gz ext4"
 
 SDKIMAGE_FEATURES = "dev-pkgs dbg-pkgs staticdev-pkgs"
+TOOLCHAIN_TARGET_TASK += "openssl curl"
+TOOLCHAIN_HOST_TASK += "nativesdk-cmake"
